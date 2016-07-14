@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            {% block header %}<h1>Burt's Books</h1>{% end %}
+        </header>
+        <div id="main">
+            <div id="content" style="overflow-x:hidden;">
+                <p>{% block body %}
+                {% end %}</p>
+            </div>
+        </div>
+        <footer>
+            {% block footer %}
+              
+            {% end %}
+        </footer>
+    </div>
+    </body>
+</html>

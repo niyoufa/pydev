@@ -1,0 +1,146 @@
+INFO:tornado.access:200 GET /odoo/api/order_partner_deliver_detail_list?partner_id=571dbf0c006f874b52b126aa&amp;start_time=2016-05-30%2010:10:10&end_time=2016-05-31%2010:10:10 (192.168.150.242) 9.67ms
+INFO:tornado.access:200 GET /odoo/api/order_partner_deliver_detail_list?partner_id=571dbf0c006f874b52b126aa&amp;start_time=2016-05-30%2010:10:10&end_time=2016-05-31%2010:10:10 (192.168.150.242) 10.29ms
+INFO:tornado.access:200 GET /odoo/api/order_partner_deliver_detail_list?partner_id=571dbf0c006f874b52b126aa&amp;start_time=2016-05-30%2010:10:10&end_time=2016-05-31%2010:10:10 (192.168.150.242) 7.30ms
+INFO:tornado.access:200 GET /odoo/api/order_partner_deliver_detail_list?partner_id=571dbf0c006f874b52b126aa&amp;start_time=2016-05-30%2010:10:10&end_time=2016-05-31%2010:10:10 (192.168.150.242) 5.51ms
+WARNING:tornado.access:404 GET /odoo/api/order_partner_deliver_detail?deliver_id=574e3da387b24433a4aecffe (192.168.150.242) 1.83ms
+INFO:tornado.access:200 GET /odoo/api/good_partner?sku=dhd200 (192.168.150.242) 319.24ms
+INFO:tornado.access:200 GET /odoo/api/order_partner_deliver_detail_list?partner_id=571dbf0c006f874b52b126aa&amp;start_time=2016-05-30%2010:10:10&end_time=2016-05-31%2010:10:10 (192.168.150.242) 8.36ms
+WARNING:tornado.access:404 GET /odoo/api/order_partner_deliver_detail?deliver_id=574e3da387b24433a4aecffe (192.168.150.242) 0.41ms
+INFO:tornado.general:/home/dhui100/develop/ods/tnd_server/handlers/partner_handlers.py modified; restarting server
+INFO:tornado.general:/home/dhui100/develop/ods/tnd_server/handlers/partner_handlers.py modified; restarting server
+Traceback (most recent call last):
+  File "/home/dhui100/develop/ods/tnd_server/main.py", line 13, in <module>
+    import app
+  File "/home/dhui100/develop/ods/tnd_server/app.py", line 4, in <module>
+    import urls
+  File "/home/dhui100/develop/ods/tnd_server/urls.py", line 39, in <module>
+    _generate_handler_patterns("handlers", handler_names)
+  File "/home/dhui100/develop/ods/tnd_server/urls.py", line 17, in _generate_handler_patterns
+    module = importlib.import_module(".%s" % name, root_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/dhui100/develop/ods/tnd_server/handlers/partner_handlers.py", line 12, in <module>
+    import ods.dhui.dhui_product_template as dpt
+  File "/home/dhui100/develop/ods/dhui/dhui_product_template.py", line 8, in <module>
+    import ods.utils as utils
+  File "/home/dhui100/develop/ods/utils.py", line 331
+    
+        ^
+IndentationError: expected an indented block
+INFO:tornado.access:200 GET /odoo/api/order_partner_deliver_detail_list?partner_id=571dbf0c006f874b52b126aa&amp;start_time=2016-05-30%2010:10:10&end_time=2016-05-31%2010:10:10 (192.168.150.242) 8.98ms
+INFO:tornado.general:/home/dhui100/develop/ods/utils.py modified; restarting server
+INFO:tornado.general:/home/dhui100/develop/ods/utils.py modified; restarting server
+INFO:tornado.general:/home/dhui100/develop/ods/utils.py modified; restarting server
+INFO:tornado.general:/home/dhui100/develop/ods/utils.py modified; restarting server
+INFO:tornado.general:/home/dhui100/develop/ods/utils.py modified; restarting server
+INFO:tornado.general:/home/dhui100/develop/ods/utils.py modified; restarting server
+INFO:tornado.general:/home/dhui100/develop/ods/utils.py modified; restarting server
+INFO:tornado.general:/home/dhui100/develop/ods/utils.py modified; restarting server
+Traceback (most recent call last):
+  File "/home/dhui100/develop/ods/tnd_server/main.py", line 13, in <module>
+    import app
+  File "/home/dhui100/develop/ods/tnd_server/app.py", line 4, in <module>
+    import urls
+  File "/home/dhui100/develop/ods/tnd_server/urls.py", line 39, in <module>
+    _generate_handler_patterns("handlers", handler_names)
+  File "/home/dhui100/develop/ods/tnd_server/urls.py", line 17, in _generate_handler_patterns
+    module = importlib.import_module(".%s" % name, root_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/dhui100/develop/ods/tnd_server/handlers/partner_handlers.py", line 12, in <module>
+    import ods.dhui.dhui_product_template as dpt
+  File "/home/dhui100/develop/ods/dhui/dhui_product_template.py", line 8, in <module>
+    import ods.utils as utils
+  File "/home/dhui100/develop/ods/utils.py", line 353
+    
+                                                ^
+IndentationError: expected an indented block
+Validating models...
+
+0 errors found
+June 06, 2016 - 16:21:06
+Django version 1.6, using settings 'dj_server.settings'
+Starting development server at http://0.0.0.0:8085/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+June 06, 2016 - 16:46:04
+Django version 1.6, using settings 'dj_server.settings'
+Starting development server at http://0.0.0.0:8085/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+June 06, 2016 - 17:10:57
+Django version 1.6, using settings 'dj_server.settings'
+Starting development server at http://0.0.0.0:8085/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+June 06, 2016 - 17:14:58
+Django version 1.6, using settings 'dj_server.settings'
+Starting development server at http://0.0.0.0:8085/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+June 06, 2016 - 17:20:32
+Django version 1.6, using settings 'dj_server.settings'
+Starting development server at http://0.0.0.0:8085/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+June 06, 2016 - 17:20:34
+Django version 1.6, using settings 'dj_server.settings'
+Starting development server at http://0.0.0.0:8085/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+June 06, 2016 - 17:21:38
+Django version 1.6, using settings 'dj_server.settings'
+Starting development server at http://0.0.0.0:8085/
+Quit the server with CONTROL-C.
+[06/Jun/2016 20:08:56] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1721
+[06/Jun/2016 22:26:07] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1721
+Validating models...
+
+0 errors found
+June 06, 2016 - 19:26:22
+Django version 1.6, using settings 'dj_server.settings'
+Starting development server at http://0.0.0.0:8085/
+Quit the server with CONTROL-C.
+[07/Jun/2016 00:09:01] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1721
+[07/Jun/2016 04:06:29] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1721
+[07/Jun/2016 04:56:24] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1721
+[07/Jun/2016 05:17:04] "GET http://www.izhongsai.com/ HTTP/1.1" 404 1668
+[07/Jun/2016 08:08:19] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1721
+[07/Jun/2016 11:24:00] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1721
+Validating models...
+
+0 errors found
+June 06, 2016 - 22:48:38
+Django version 1.6, using settings 'dj_server.settings'
+Starting development server at http://0.0.0.0:8085/
+Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "manage.py", line 10, in <module>
+    execute_from_command_line(sys.argv)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/__init__.py", line 399, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/__init__.py", line 392, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/__init__.py", line 261, in fetch_command
+    commands = get_commands()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/__init__.py", line 107, in get_commands
+    apps = settings.INSTALLED_APPS
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 132, in __init__
+    % (self.SETTINGS_MODULE, e)
+ImportError: Could not import settings 'dj_server.settings' (Is it on sys.path? Is there an import error in the settings file?): No module named ods.settings

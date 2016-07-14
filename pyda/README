@@ -1,0 +1,27 @@
+
+python 数据分析
+
+1. 数据分析相关的python库
+Numpy,pandas,matplotlib,Scipy,statsmodels,scikit-learn
+
+2. 数据导入和导出
+（1） csv
+（2）MySQL
+（3）excel
+
+3. 数据提取，筛选，过滤
+
+4. 数据统计
+
+5. 数据处理
+数据转置，缺失处理，数据分组，值替换，
+
+6. 统计分析
+ t检验， 方差分析，卡方分析，计数统计，回归分析
+
+7. 可视化
+matplotlib，seaborn
+
+8. 其他
+用python调用R
+ipython

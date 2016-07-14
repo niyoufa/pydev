@@ -1,0 +1,146 @@
+2016-06-02 06:29:49,676 [MainThread:140269641873216] [dhui_init_product_data_command:handle:38] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-02 06:29:50,676 [MainThread:139733188609856] [dhui_init_product_data_command:handle:38] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-02 06:29:50,696 [MainThread:140150778836800] [dhui_init_product_data_command:handle:38] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-02 06:29:50,696 [MainThread:139834291087168] [dhui_init_product_data_command:handle:38] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-02 06:31:01,975 [MainThread:139868675331904] [dhui_init_product_data_command:handle:38] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-03 01:53:24,065 [MainThread:140415406188352] [dhui_init_product_data_command:handle:38] [ERROR]  - 错误信息：<Fault invalid input syntax for integer: "571dbf0c006f874b52b126aa"
+LINE 1: ...nfo" SET "product_tmpl_id"=3,"min_qty"=1.0,"name"='571dbf0c0...
+                                                             ^
+: 'Traceback (most recent call last):\n  File "/opt/odoo/openerp/service/wsgi_server.py", line 75, in xmlrpc_return\n    result = openerp.http.dispatch_rpc(service, method, params)\n  File "/opt/odoo/openerp/http.py", line 115, in dispatch_rpc\n    result = dispatch(method, params)\n  File "/opt/odoo/openerp/service/model.py", line 37, in dispatch\n    res = fn(db, uid, *params)\n  File "/opt/odoo/openerp/service/model.py", line 167, in execute_kw\n    return execute(db, uid, obj, method, *args, **kw or {})\n  File "/opt/odoo/openerp/service/model.py", line 118, in wrapper\n    return f(dbname, *args, **kwargs)\n  File "/opt/odoo/openerp/service/model.py", line 175, in execute\n    res = execute_cr(cr, uid, obj, method, *args, **kw)\n  File "/opt/odoo/openerp/service/model.py", line 164, in execute_cr\n    return getattr(object, method)(cr, uid, *args, **kw)\n  File "/opt/odoo/openerp/api.py", line 268, in wrapper\n    return old_api(self, *args, **kwargs)\n  File "/opt/odoo/openerp/api.py", line 399, in old_api\n    result = method(recs, *args, **kwargs)\n  File "/opt/odoo/openerp/models.py", line 3788, in write\n    self._write(old_vals)\n  File "/opt/odoo/openerp/api.py", line 266, in wrapper\n    return new_api(self, *args, **kwargs)\n  File "/opt/odoo/openerp/api.py", line 592, in new_api\n    result = method(self._model, cr, uid, self.ids, *args, **old_kwargs)\n  File "/opt/odoo/openerp/models.py", line 3899, in _write\n    cr.execute(query, params + (sub_ids,))\n  File "/opt/odoo/openerp/sql_db.py", line 158, in wrapper\n    return f(self, *args, **kwargs)\n  File "/opt/odoo/openerp/sql_db.py", line 234, in execute\n    res = self._obj.execute(query, params)\nDataError: invalid input syntax for integer: "571dbf0c006f874b52b126aa"\nLINE 1: ...nfo" SET "product_tmpl_id"=3,"min_qty"=1.0,"name"=\'571dbf0c0...\n                                                             ^\n\n'>.
+2016-06-06 12:02:29,887 [api_views:api_router:56] [ERROR]  - 'module' object has no attribute 'init_response_data'
+2016-06-06 12:03:26,606 [api_views:api_router:57] [ERROR]  - "'action'"
+2016-06-06 12:03:39,378 [api_views:api_router:57] [ERROR]  - "'action'"
+2016-06-06 12:03:42,461 [api_views:api_router:57] [ERROR]  - "'action'"
+2016-06-06 12:12:53,261 [api_views:api_router:58] [ERROR]  - "'action'"
+2016-06-06 12:13:11,616 [api_views:api_router:58] [ERROR]  - check_action_access() takes no arguments (1 given)
+2016-06-06 12:13:13,742 [api_views:api_router:58] [ERROR]  - check_action_access() takes no arguments (1 given)
+2016-06-06 12:13:14,173 [api_views:api_router:58] [ERROR]  - check_action_access() takes no arguments (1 given)
+2016-06-06 12:13:20,176 [api_views:api_router:58] [ERROR]  - check_action_access() takes no arguments (1 given)
+2016-06-06 12:34:55,772 [api_views:api_router:56] [ERROR]  - "'data'"
+2016-06-06 12:35:14,068 [api_views:api_router:59] [ERROR]  - "'data'"
+2016-06-06 12:40:34,724 [utils:manual_create_invoice:541] [ERROR]  - 错误信息：'NoneType' object has no attribute 'import_product_template_data'.
+2016-06-06 12:40:39,319 [api_views:_param_except_handler:30] [ERROR]  - error 错误信息 : 'NoneType' object has no attribute 'get_sale_order_list'
+2016-06-06 12:42:41,452 [utils:manual_create_invoice:541] [ERROR]  - 错误信息：'NoneType' object has no attribute 'import_product_template_data'.
+2016-06-06 12:42:41,452 [api_views:_param_except_handler:30] [ERROR]  - error 错误信息 : 'NoneType' object has no attribute 'get_sale_order_list'
+2016-06-06 12:51:48,131 [api_views:api_router:60] [ERROR]  - global name 'a' is not defined
+2016-06-06 14:16:08,875 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:16:41,572 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:18:09,073 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:20:36,885 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:21:02,991 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:21:04,266 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:21:11,633 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:21:30,692 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:21:31,323 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:22:11,809 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:22:12,623 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:22:12,771 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:22:12,892 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:22:13,036 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:22:13,923 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:22:25,548 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:22:26,143 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:22:26,379 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:26:54,449 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:26:55,228 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:26:55,529 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:26:55,804 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:26:56,004 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:26:56,147 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:26:56,324 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:26:56,479 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:26:56,619 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:27:25,592 [api_views:api_router:59] [ERROR]  - "'action'"
+2016-06-06 14:27:42,349 [api_views:api_router:59] [ERROR]  - "'action'"
+2016-06-06 14:27:43,756 [api_views:api_router:59] [ERROR]  - "'action'"
+2016-06-06 14:28:17,650 [api_views:api_router:56] [ERROR]  - "'action'"
+2016-06-06 14:28:58,962 [api_views:api_router:57] [ERROR]  - 'str' object is not callable
+2016-06-06 14:29:09,419 [api_views:api_router:52] [ERROR]  - 'str' object is not callable
+2016-06-06 14:29:16,082 [api_views:api_router:59] [ERROR]  - 'str' object is not callable
+2016-06-06 14:30:14,619 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:30:26,193 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:31:38,849 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:32:39,080 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:32:40,350 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:32:47,127 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:32:52,699 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:33:21,629 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:50,038 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:51,116 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:51,499 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:51,634 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:51,754 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:51,891 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:52,044 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:52,754 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:52,890 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:53,446 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:53,573 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:53,715 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:54,227 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:54,416 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:54,562 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:55,091 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:55,266 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:34:55,434 [api_views:api_router:58] [ERROR]  - 'str' object is not callable
+2016-06-06 14:37:36,331 [api_views:api_router:57] [ERROR]  - 'str' object is not callable
+2016-06-06 18:48:19,894 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：<ProtocolError for localhost:8888/xmlrpc/common: 404 Not Found>.
+2016-06-06 18:53:14,635 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：<ProtocolError for localhost:8888/xmlrpc/common: 404 Not Found>.
+2016-06-06 18:53:20,252 [dhui_init_product_data_command:handle:26] [ERROR]  - 错误信息：<ProtocolError for localhost:8888/xmlrpc/common: 404 Not Found>.
+2016-06-08 13:39:08,231 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：list index out of range.
+2016-06-12 15:24:54,546 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：<Fault warning -- Object Error
+
+Object dhuistock.good doesn't exist: ''>.
+2016-06-12 15:27:39,807 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：<Fault warning -- Object Error
+
+Object dhuistock.good doesn't exist: ''>.
+2016-06-12 15:31:31,175 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：<Fault warning -- Object Error
+
+Object dhuistock.good doesn't exist: ''>.
+2016-06-12 15:34:34,839 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：<Fault warning -- Object Error
+
+Object dhuistock.good doesn't exist: ''>.
+2016-06-12 17:06:07,945 [dhui_init_user_info:handle:31] [ERROR]  - 错误信息：not authorized on dhui100 to execute command { find: "user", filter: {}, skip: 12100 }.
+2016-06-12 17:06:08,009 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：not authorized on dhui100 to execute command { find: "goods", filter: {} }.
+2016-06-12 17:06:27,979 [dhui_init_user_info:handle:31] [ERROR]  - 错误信息：not authorized on dhui100 to execute command { find: "user", filter: {}, skip: 12100 }.
+2016-06-12 17:06:28,050 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：not authorized on dhui100 to execute command { find: "goods", filter: {} }.
+2016-06-12 17:10:15,219 [dhui_init_user_info:handle:31] [ERROR]  - 错误信息：not authorized on dhui100 to execute command { find: "user", filter: {}, skip: 12100 }.
+2016-06-12 17:10:15,297 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：not authorized on dhui100 to execute command { find: "goods", filter: {} }.
+<<<<<<< HEAD
+2016-06-12 17:58:20,452 [dhui_init_user_info:handle:31] [ERROR]  - 错误信息：<Fault warning -- Object Error
+
+Object dhui.user doesn't exist: ''>.
+2016-06-12 18:01:18,390 [dhui_init_user_info:handle:31] [ERROR]  - 错误信息：<Fault warning -- Object Error
+
+Object dhui.user doesn't exist: ''>.
+2016-06-12 18:03:59,836 [dhui_init_user_info:handle:31] [ERROR]  - 错误信息：<Fault warning -- Object Error
+
+Object dhui.user doesn't exist: ''>.
+=======
+2016-06-13 12:36:33,733 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：<Fault : 'Traceback (most recent call last):\n  File "/opt/odoo/openerp/service/wsgi_server.py", line 75, in xmlrpc_return\n    result = openerp.http.dispatch_rpc(service, method, params)\n  File "/opt/odoo/openerp/http.py", line 115, in dispatch_rpc\n    result = dispatch(method, params)\n  File "/opt/odoo/openerp/service/common.py", line 26, in dispatch\n    return fn(*params)\n  File "/opt/odoo/openerp/service/common.py", line 31, in exp_login\n    res = security.login(db, login, password)\n  File "/opt/odoo/openerp/service/security.py", line 26, in login\n    res_users = openerp.registry(db)[\'res.users\']\n  File "/opt/odoo/openerp/__init__.py", line 68, in registry\n    return modules.registry.RegistryManager.get(database_name)\n  File "/opt/odoo/openerp/modules/registry.py", line 339, in get\n    update_module)\n  File "/opt/odoo/openerp/modules/registry.py", line 370, in new\n    openerp.modules.load_modules(registry._db, force_demo, status, update_module)\n  File "/opt/odoo/openerp/modules/loading.py", line 351, in load_modules\n    force, status, report, loaded_modules, update_module)\n  File "/opt/odoo/openerp/modules/loading.py", line 255, in load_marked_modules\n    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)\n  File "/opt/odoo/openerp/modules/loading.py", line 176, in load_module_graph\n    _load_data(cr, module_name, idref, mode, kind=\'data\')\n  File "/opt/odoo/openerp/modules/loading.py", line 118, in _load_data\n    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)\n  File "/opt/odoo/openerp/tools/convert.py", line 900, in convert_file\n    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)\n  File "/opt/odoo/openerp/tools/convert.py", line 986, in convert_xml_import\n    obj.parse(doc.getroot(), mode=mode)\n  File "/opt/odoo/openerp/tools/convert.py", line 852, in parse\n    self._tags[rec.tag](self.cr, rec, n, mode=mode)\n  File "/opt/odoo/openerp/tools/convert.py", line 762, in _tag_record\n    id = self.pool[\'ir.model.data\']._update(cr, self.uid, rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode, context=rec_context )\n  File "/opt/odoo/openerp/api.py", line 268, in wrapper\n    return old_api(self, *args, **kwargs)\n  File "/opt/odoo/openerp/addons/base/ir/ir_model.py", line 1065, in _update\n    res_id = model_obj.create(cr, uid, values, context=context)\n  File "/opt/odoo/openerp/api.py", line 268, in wrapper\n    return old_api(self, *args, **kwargs)\n  File "/opt/odoo/openerp/api.py", line 372, in old_api\n    result = method(recs, *args, **kwargs)\n  File "/opt/odoo/openerp/models.py", line 4092, in create\n    record = self.browse(self._create(old_vals))\n  File "/opt/odoo/openerp/api.py", line 266, in wrapper\n    return new_api(self, *args, **kwargs)\n  File "/opt/odoo/openerp/api.py", line 508, in new_api\n    result = method(self._model, cr, uid, *args, **old_kwargs)\n  File "/opt/odoo/openerp/models.py", line 4230, in _create\n    tuple([u[2] for u in updates if len(u) > 2])\n  File "/opt/odoo/openerp/sql_db.py", line 158, in wrapper\n    return f(self, *args, **kwargs)\n  File "/opt/odoo/openerp/sql_db.py", line 234, in execute\n    res = self._obj.execute(query, params)\nParseError: "null value in column "res_model" violates not-null constraint\nDETAIL:  Failing row contains (579, 1, 2016-06-13 04:36:33.56819, null, 1, 2016-06-13 04:36:33.56819, null, ir.actions.act_window, \\u6240\\u6709\\u5546\\u54c1, null, null, null, form, null, null, 0, tree,form, f, current, t, null, f, 80, {}).\n" while parsing /opt/odoo/dhuiaddons/dhuistock/good_view.xml:4, near\n<record id="action_dhui_good_all" model="ir.actions.act_window">\n            <field name="name">&#25152;&#26377;&#21830;&#21697;</field>\n            <field name="model">product.template</field>\n        </record>\n'>.
+2016-06-13 12:37:07,484 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：<Fault : 'Traceback (most recent call last):\n  File "/opt/odoo/openerp/service/wsgi_server.py", line 75, in xmlrpc_return\n    result = openerp.http.dispatch_rpc(service, method, params)\n  File "/opt/odoo/openerp/http.py", line 115, in dispatch_rpc\n    result = dispatch(method, params)\n  File "/opt/odoo/openerp/service/common.py", line 26, in dispatch\n    return fn(*params)\n  File "/opt/odoo/openerp/service/common.py", line 31, in exp_login\n    res = security.login(db, login, password)\n  File "/opt/odoo/openerp/service/security.py", line 26, in login\n    res_users = openerp.registry(db)[\'res.users\']\n  File "/opt/odoo/openerp/__init__.py", line 68, in registry\n    return modules.registry.RegistryManager.get(database_name)\n  File "/opt/odoo/openerp/modules/registry.py", line 339, in get\n    update_module)\n  File "/opt/odoo/openerp/modules/registry.py", line 370, in new\n    openerp.modules.load_modules(registry._db, force_demo, status, update_module)\n  File "/opt/odoo/openerp/modules/loading.py", line 351, in load_modules\n    force, status, report, loaded_modules, update_module)\n  File "/opt/odoo/openerp/modules/loading.py", line 255, in load_marked_modules\n    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)\n  File "/opt/odoo/openerp/modules/loading.py", line 176, in load_module_graph\n    _load_data(cr, module_name, idref, mode, kind=\'data\')\n  File "/opt/odoo/openerp/modules/loading.py", line 118, in _load_data\n    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)\n  File "/opt/odoo/openerp/tools/convert.py", line 900, in convert_file\n    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)\n  File "/opt/odoo/openerp/tools/convert.py", line 986, in convert_xml_import\n    obj.parse(doc.getroot(), mode=mode)\n  File "/opt/odoo/openerp/tools/convert.py", line 852, in parse\n    self._tags[rec.tag](self.cr, rec, n, mode=mode)\n  File "/opt/odoo/openerp/tools/convert.py", line 762, in _tag_record\n    id = self.pool[\'ir.model.data\']._update(cr, self.uid, rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode, context=rec_context )\n  File "/opt/odoo/openerp/api.py", line 268, in wrapper\n    return old_api(self, *args, **kwargs)\n  File "/opt/odoo/openerp/addons/base/ir/ir_model.py", line 1065, in _update\n    res_id = model_obj.create(cr, uid, values, context=context)\n  File "/opt/odoo/openerp/api.py", line 268, in wrapper\n    return old_api(self, *args, **kwargs)\n  File "/opt/odoo/openerp/api.py", line 372, in old_api\n    result = method(recs, *args, **kwargs)\n  File "/opt/odoo/openerp/models.py", line 4092, in create\n    record = self.browse(self._create(old_vals))\n  File "/opt/odoo/openerp/api.py", line 266, in wrapper\n    return new_api(self, *args, **kwargs)\n  File "/opt/odoo/openerp/api.py", line 508, in new_api\n    result = method(self._model, cr, uid, *args, **old_kwargs)\n  File "/opt/odoo/openerp/models.py", line 4230, in _create\n    tuple([u[2] for u in updates if len(u) > 2])\n  File "/opt/odoo/openerp/sql_db.py", line 158, in wrapper\n    return f(self, *args, **kwargs)\n  File "/opt/odoo/openerp/sql_db.py", line 234, in execute\n    res = self._obj.execute(query, params)\nParseError: "null value in column "res_model" violates not-null constraint\nDETAIL:  Failing row contains (580, 1, 2016-06-13 04:37:07.326004, null, 1, 2016-06-13 04:37:07.326004, null, ir.actions.act_window, \\u6240\\u6709\\u5546\\u54c1, null, null, null, form, null, null, 0, tree,form, f, current, t, null, f, 80, {}).\n" while parsing /opt/odoo/dhuiaddons/dhuistock/good_view.xml:4, near\n<record id="action_dhui_good_all" model="ir.actions.act_window">\n            <field name="name">&#25152;&#26377;&#21830;&#21697;</field>\n            <field name="model">product.template</field>\n        </record>\n'>.
+>>>>>>> 035433d90d71ee634af151eb036b349c7a59432a
+2016-06-15 08:54:55,667 [dhui_init_user_info:handle:27] [ERROR]  - 错误信息：.
+<<<<<<< HEAD
+2016-06-17 10:01:11,005 [dhui_init_user_info:handle:36] [ERROR]  - 错误信息：[Errno 104] Connection reset by peer.
+2016-06-17 10:01:11,094 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-17 12:04:01,462 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+=======
+2016-06-20 10:30:32,918 [dhui_init_user_info:handle:36] [ERROR]  - 错误信息：localhost:27017: [Errno 111] Connection refused.
+2016-06-20 10:31:03,021 [dhui_init_product_data_command:handle:39] [ERROR]  - 错误信息：localhost:27017: [Errno 111] Connection refused.
+<<<<<<< HEAD
+>>>>>>> 41b324cebb74e934e97e9ef4e250dc17813b8326
+=======
+2016-06-21 14:00:32,673 [dhui_init_user_info:handle:36] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-21 14:00:32,697 [dhui_init_product_data_command:handle:43] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-21 15:01:15,555 [dhui_init_product_data_command:handle:43] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-21 16:01:04,489 [dhui_init_user_info:handle:36] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-21 16:01:04,493 [dhui_init_product_data_command:handle:43] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-22 09:00:32,931 [dhui_init_user_info:handle:36] [ERROR]  - 错误信息：localhost:27017: [Errno 111] Connection refused.
+2016-06-22 09:01:04,042 [dhui_init_product_data_command:handle:43] [ERROR]  - 错误信息：localhost:27017: [Errno 111] Connection refused.
+2016-06-22 10:32:59,842 [dhui_init_product_data_command:handle:43] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+>>>>>>> 250857e24e680470f57345a212f446ca31f930cf
+2016-06-23 15:42:05,367 [dhui_task_user_command:handle:32] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-23 16:34:43,042 [dhui_init_product_data_command:handle:43] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-23 16:34:43,194 [dhui_task_user_command:handle:32] [ERROR]  - 错误信息：[Errno 111] Connection refused.
+2016-06-23 22:03:34,589 [dhui_init_product_data_command:handle:43] [ERROR]  - 错误信息：[Errno 111] Connection refused.
