@@ -5,8 +5,9 @@
     date : 2016-07-13
 """
 
-import pdb
-import dhuicredit.model.mongo as mongo
+import pdb, datetime
+import tnd_api_server.model.mongo as mongo
+import tnd_api_server.libs.utils as utils
 
 class Singleton(object):
     def __new__(cls, *args, **kw):
@@ -30,3 +31,30 @@ class BaseModel(object):
         coll_name = self.coll_name()
         coll = mongo.get_coll(coll_name)
         return coll
+
+    def create(self, **obj):
+        coll = self.get_coll()
+        curr_time = datetime.datetime.now()
+        obj["create_date"] = str(curr_time)
+        ret = coll.insert_one(obj)
+        return ret
+
+    def search(self, query_params):
+        coll = self.get_coll()
+        ret = coll.find_one(query_params)
+        ret = utils.dump(ret)
+        return ret
+
+    def update(self, query_params, update_params):
+        coll = self.get_coll()
+        obj = coll.find_one(query_params)
+        if obj:
+            update_params.update({
+                "create_date": obj["create_date"],
+            })
+            ret = coll.save(update_params)
+
+    def delete(self, **query_params):
+        coll = self.get_coll()
+        ret = coll.remove(query_params)
+        return ret

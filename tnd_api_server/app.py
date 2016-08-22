@@ -55,7 +55,6 @@ class Application(web.Application):
                         ui_modules=ui_modules,
                         #autoescape=None,
                         )
-
         super(Application, self).__init__(handlers, **settings)
 
     def reverse_api(self, request):

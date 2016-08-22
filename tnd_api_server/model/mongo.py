@@ -89,6 +89,22 @@ class Collections :
             host=settings.mongo["host"],
             port=settings.mongo["port"],
         ),
+        subject = dict(
+            coll_name="subject",
+            db_name=settings.mongo["database"],
+            username=settings.mongo["user"],
+            password=settings.mongo["password"],
+            host=settings.mongo["host"],
+            port=settings.mongo["port"],
+        ),
+        link=dict(
+            coll_name="link",
+            db_name=settings.mongo["database"],
+            username=settings.mongo["user"],
+            password=settings.mongo["password"],
+            host=settings.mongo["host"],
+            port=settings.mongo["port"],
+        ),
     )
 
     @classmethod

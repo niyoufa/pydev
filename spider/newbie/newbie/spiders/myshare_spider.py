@@ -7,8 +7,6 @@ import newbie.mongo as mongo
 
 import sys,pdb
 
-domain = "http://toutiao.io/"
-subject = 73104
 subject_coll = mongo.get_coll("subject")
 
 class MyShareSpider(Spider):
@@ -17,16 +15,20 @@ class MyShareSpider(Spider):
     subjects = subject_coll.find()
     start_urls  = []
     for subject in subjects:
-        start_urls.append("http://toutiao.io/subjects/"+str(subject['number']))
+        start_urls.append("http://toutiao.io/subjects/"+str(subject['account']))
 
     def parse(self, response):
         sel = Selector(response)
         pagination = sel.xpath("//div[@class='text-center']/ul/li[@class='last']/a")
-        page = int(pagination.xpath("@href").extract()[0].split("=")[1])
-        share_url = pagination.xpath("@href").extract()[0].split("=")[0]
+        try:
+            page = int(pagination.xpath("@href").extract()[0].split("=")[1])
+        except:
+            page = 1
+
+        share_url = response._get_url()
         new_share_urls = []
         for i in range(page):
-            new_share_urls.append(domain + share_url + "=" +str(i+1))
+            new_share_urls.append(share_url + "?page=" + str(i+1))
         print new_share_urls
 
         for new_url in new_share_urls:
@@ -37,6 +39,8 @@ class MyShareSpider(Spider):
         posts = sel.xpath("//div[@class='posts']/div[@class='post']")
         items = []
         coll = mongo.get_coll("link")
+        url = response._get_url()
+        account = int(url.split("?")[0].split("subjects/")[1])
         for post in posts:
             articel = post.xpath("div[@class='content']")
             title = articel.xpath("h3/a/text()").extract()[0].strip()
@@ -46,12 +50,12 @@ class MyShareSpider(Spider):
             item["title"] = title
             item["href"] = href
             item["source"] = source
-            item["subject"] = subject
+            item["account"] = account
             item["type"] = "toutiao.share"
             items.append(item)
             query_params = {
                 "href":href,
-                "subject":subject,
+                "account":account,
             }
             if coll.find(query_params).count()>0:
                 continue

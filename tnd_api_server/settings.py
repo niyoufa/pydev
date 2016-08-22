@@ -26,7 +26,7 @@ else:
 loglevel = "INFO"  # for celeryd
 port = 30000
 app_url_prefix = ""
-sitename = "dhuicredit api"
+sitename = "tnd_api_server api"
 domain = "www.dhuicredit.com"
 home_url = "http://%s/api" % domain
 
@@ -51,7 +51,7 @@ ssl_options={
 mongo = {
             "host":"localhost",
             "port":27017,
-            "database":"dhuicredit",
+            "database":"newbie",
             "user":"dhuicredit",
             "password":"DhuiCreditAdmin",
         }
@@ -68,31 +68,5 @@ smtp = {"host": "smtp.exmail.qq.com",
         "duration": 30,
         "tls": True
         }
-
-sex = {0: "未知",
-              1: "男",
-              2: "女"
-              }
-
-on_sale_flag = {0: "未上架",
-              1: "已上架"
-              }
-
-TEST_USER = ["57330c6c006f877f57fcc4e7","572c37bb006f870cf2f75978","5720201c006f873b606394fb","571dbf0c006f874b52b126aa"]
-
-auth_status = {
-    "committed":["committed","已提交"],
-    "checking":["cheching","审核中"],
-    "pass":["pass","审核通过"],
-    "nopass":["nopass","审核未通过"],
-}
-edit_status = {
-    "noedit":["noedit","不可修改"],
-    "edit":["edit","可修改"],
-}
-auth_type = {
-    "person":["person","个人"],
-    "company":["company","企业"],
-}
 
 server_addr = "http://localhost:10000"

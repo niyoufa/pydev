@@ -14,7 +14,7 @@ class NewbieItem(scrapy.Item):
     title = scrapy.Field()
     href = scrapy.Field()
     source = scrapy.Field()
-    subject = scrapy.Field()
+    account = scrapy.Field()
     # toutiao.share,toutiao.star,
     type = scrapy.Field()
     _id = scrapy.Field()

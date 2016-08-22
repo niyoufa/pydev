@@ -21,7 +21,7 @@ ui_modules = {}
 # the module names in handlers folder
 
 # TODO 写一个函数自动获取该list值
-handler_names = []
+handler_names = ["subject","link"]
 
 handler_admin_names=[]
 
@@ -49,8 +49,8 @@ def _generate_handler_patterns(root_module, handler_names, prefix=options.app_ur
 
             handlers.extend(_handlers)
 
-_generate_handler_patterns("dhuicredit.handlers", handler_names)
-_generate_handler_patterns("dhuicredit.handlers.admin", handler_admin_names)
+_generate_handler_patterns("tnd_api_server.handlers", handler_names)
+_generate_handler_patterns("tnd_api_server.handlers.admin", handler_admin_names)
 
 # Override Tornado default ErrorHandler
 handlers.append((r".*", APIErrorHandler))
