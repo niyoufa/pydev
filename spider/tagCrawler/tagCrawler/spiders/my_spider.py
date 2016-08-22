@@ -1,5 +1,5 @@
 from scrapy.spiders import BaseSpider
-from scrapy import Request 
+from scrapy import Request
 import pdb
 class MySpider(BaseSpider):
     name = 'myspider'

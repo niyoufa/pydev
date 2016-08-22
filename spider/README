@@ -15,7 +15,7 @@ http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dsintro
 
 
 1. 安装 
-pip install Scrapy 
+pip install Scrapy
 
 2. 新建项目
 scrapy startproject projectname
